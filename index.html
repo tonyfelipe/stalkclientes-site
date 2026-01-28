@@ -2,13 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>stalk clientes</title>
-
-  <!-- Fonte simples, moderna e limpa (pode trocar depois se quiser) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -16,142 +15,65 @@
     }
 
     body {
-      background-color: #000;
+      background: #000;
       color: #fff;
       font-family: 'Inter', sans-serif;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
     }
 
     .container {
-      text-align: center;
+      opacity: 0.9;
     }
 
     .title {
-      font-size: clamp(3rem, 8vw, 6rem);
+      font-size: 64px;
       font-weight: 700;
-      letter-spacing: -1px;
+      letter-spacing: -2px;
     }
 
     .subtitle {
-      margin-top: 8px;
-      font-size: 1.2rem;
+      font-size: 22px;
       font-weight: 300;
-      opacity: 0.85;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="title">stalk</div>
-    <div class="subtitle">clientes.com</div>
-  </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stalk Clientes — Em breve</title>
-
-  <!-- Fonte clean e moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background-color: #000;
-      color: #fff;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      text-align: center;
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    .logo {
-      font-weight: 800;
-      font-size: 64px;
-      letter-spacing: -1px;
-      line-height: 1;
-    }
-
-    .logo span {
-      display: block;
-      font-weight: 300;
-      font-size: 20px;
-      margin-top: 6px;
-      letter-spacing: 1px;
-      opacity: 0.85;
+      margin-top: 4px;
+      opacity: 0.7;
     }
 
     .divider {
       width: 60px;
       height: 2px;
       background: #fff;
-      margin: 28px auto;
-      opacity: 0.6;
-    }
-
-    .slogan {
-      font-size: 16px;
-      font-weight: 300;
-      opacity: 0.85;
-      margin-bottom: 10px;
+      margin: 24px auto;
+      opacity: 0.3;
     }
 
     .status {
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 300;
       opacity: 0.6;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      margin-top: 10px;
     }
 
-    @media (max-width: 480px) {
-      .logo {
-        font-size: 48px;
-      }
-      .logo span {
-        font-size: 16px;
-      }
+    .tagline {
+      font-size: 13px;
+      font-weight: 300;
+      opacity: 0.5;
+      margin-top: 6px;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <div class="logo">
-      stalk
-      <span>clientes.com</span>
-    </div>
+    <div class="title">stalk</div>
+    <div class="subtitle">clientes.com</div>
 
     <div class="divider"></div>
 
-    <div class="slogan">
-      Aqui você encontra seus clientes.
-    </div>
-
-    <div class="status">
-      em breve
-    </div>
+    <div class="status">em breve</div>
+    <div class="tagline">aqui você encontra seus clientes</div>
   </div>
-
 </body>
 </html>
