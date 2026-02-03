@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel | StalkClientes</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0f172a; color: #e5e7eb; margin: 0; display: flex; }
+        .sidebar { width: 250px; background: #020617; height: 100vh; padding: 20px; border-right: 1px solid #1e293b; position: fixed; }
+        .main { margin-left: 250px; padding: 40px; width: calc(100% - 250px); }
+        .nav-item { display: block; padding: 12px; color: #94a3b8; text-decoration: none; border-radius: 8px; margin-bottom: 5px; }
+        .nav-item.active { background: #1e293b; color: #22c55e; }
+        .card { background: #020617; padding: 20px; border-radius: 12px; border: 1px solid #1e293b; margin-bottom: 20px; }
+        .badge { font-size: 10px; background: #22c55e; color: #020617; padding: 3px 8px; border-radius: 4px; font-weight: bold; }
+        .btn-action { background: #22c55e; color: #020617; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 style="color: #22c55e">stalkclientes.com</h2>
+        <nav>
+            <a href="#" class="nav-item active">📊 Leads</a>
+            <a href="/logout" style="color: #ef4444;" class="nav-item">🚪 Sair</a>
+        </nav>
+    </div>
+    <div class="main">
+        <h2>Bem-vindo ao seu Painel</h2>
+        {% for lead in leads %}
+        <div class="card">
+            <span class="badge">LEAD</span>
+            <h4>{{ lead[5] }} em {{ lead[6] }}</h4>
+            <p style="color: #94a3b8;">"{{ lead[3] }}"</p>
+            <a href="{{ lead[4] }}" target="_blank" class="btn-action">Ver Prova Real</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

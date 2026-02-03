@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | StalkClientes</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #0f172a; color: #e5e7eb; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { background: #020617; padding: 40px; border-radius: 12px; width: 380px; border: 1px solid #1e293b; text-align: center; }
+        h1 { font-size: 22px; color: #22c55e; margin-bottom: 10px; }
+        input, button { width: 100%; margin-top: 12px; padding: 14px; border-radius: 8px; border: none; box-sizing: border-box; }
+        input { background: #1e293b; color: white; border: 1px solid #334155; }
+        button { background: #22c55e; font-weight: bold; cursor: pointer; color: #020617; margin-top: 25px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+     <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="width: 120px; margin-bottom: 20px;"> 
+        <h1>stalkclientes.com</h1>
+        <form method="POST">
+            <input name="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Entrar no Painel</button>
+        </form>
+    </div>
+</body>
+</html>
